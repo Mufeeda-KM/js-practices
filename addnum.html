@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            javascript code
+        </title>
+        </head>
+        <script >
+            function addTwoNumber(x,y)
+            {
+                var sum = x + y;
+                 console.log("sum:",sum);
+                 return sum;
+            }
+           </script>
+    <body>
+        <span> 
+             <h1>Add two numbers</h1><br>
+            First Number:<input type="text" id="firstnumber"/><br>
+            Second Number:<input type="text" id="secondnumber"/>
+           <button onclick="addTwoNumber()" id="btnAdd">Add</button><br>
+            <label id="result"></label>
+        </span>
+
+<script>
+
+    function addTwoNumber(){
+        var n1El= document.getElementById('firstnumber');
+        console.log(n1El.value)
+        var n2El=document.getElementById('secondnumber');
+        console.log(n2El.value)
+
+        var n1=parseFloat(n1El.value);
+        var n2=parseFloat(n2El.value);
+
+        var sum=n1+n2;
+        document.getElementById("result").innerText="sum is:" + sum;
+    console.log(sum)
+    }
+</script>
+
+
+
+
+
+
+
+<footer>
+    </footer>
+ <script>
+        var btn=document.getElementById('btnAdd')
+        btn.style.color="brown"
+        btn.innerHTML="<h3>ADD</h3>"
+    </script>
+
+    </body>
+</html>
